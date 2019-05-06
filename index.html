@@ -3,34 +3,39 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
-        <div id="play" onclick="initSound(document.getElementById('bpm').value)" > 
-            Play
-        </div>
-
-        <input type="number" value="120" id="bpm" />
-
-        <h2>
-            Beat 1 <br>
-            <div id="beat1">
+        <center>
+            <div style="padding: 50" id="play2" onclick="playRandomSound(document.getElementById('bpm').value)" > 
+                <button>Generate a random Beat</button>
             </div>
-        </h2>
-        <h2>
-            Beat 2 <br>
-            <div id="beat2">
-            </div>
-        </h2>
-        <h2>
-            Beat 3 <br>
-            <div id="beat3">
-            </div>
-        </h2>
-        <h2>
-            Beat 4 <br>
-            <div id="beat4">
-            </div>
-        </h2>
         
-
+            <h3>BPM</h3>
+            <input type="number" value="120" id="bpm" />
+            <br><br><br>
+            <h2>
+                Beat 1 <br>
+                <div id="beat1">
+                </div>
+            </h2>
+            <h2>
+                Beat 2 <br>
+                <div id="beat2">
+                </div>
+            </h2>
+            <h2>
+                Beat 3 <br>
+                <div id="beat3">
+                </div>
+            </h2>
+            <h2>
+                Beat 4 <br>
+                <div id="beat4">
+                </div>
+            </h2>
+            
+            <div id="play" onclick="initSound(document.getElementById('bpm').value)" > 
+                <button>Generate Beat</button>
+            </div>
+        </center>
     </body>
     <script src="src/js/main.js" ></script>
 </html>
